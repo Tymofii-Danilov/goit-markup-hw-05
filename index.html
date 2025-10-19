@@ -538,15 +538,14 @@
           <p class="subscribe-label">Subscribe</p>
           <form class="cage-subscribe-wrapper">
             <label for="cage-subscribe-form" class="visually-hidden"
-              >E-mail</label
-            >
-            <input
-              type="email"
-              placeholder="E-mail"
-              id="cage-subscribe-form"
-              class="cage-subscribe-form"
-              name="cage-subscribe-form"
-            />
+              >E-mail
+              <input
+                type="email"
+                placeholder="E-mail"
+                id="cage-subscribe-form"
+                class="cage-subscribe-form"
+                name="cage-subscribe-form"
+            /></label>
             <button type="submit" class="cage-subscribe-button">
               Subscribe
               <svg class="cage-subscribe-icon" width="24" height="24">
@@ -567,12 +566,12 @@
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="form-wrapper">
-            <label for="name" class="modal-label">Name</label>
+            <label for="user-name" class="modal-label">Name</label>
             <div class="modal-input-wrapper">
               <input
                 type="text"
-                id="name"
-                name="name"
+                id="user-name"
+                name="user-name"
                 class="modal-input"
                 required
               />
@@ -612,32 +611,36 @@
             </div>
           </div>
           <div class="text-form-wrapper">
-            <label for="comment" class="modal-label">Comment</label>
+            <label for="user-comment" class="modal-label">Comment</label>
             <textarea
-              name="comment"
-              id="comment"
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
               class="modal-textarea"
             ></textarea>
           </div>
+          <div class="terms-checkbox-wrapper">
+            <input
+              type="checkbox"
+              id="terms-and-conditions"
+              class="modal-checkbox visually-hidden"
+              name="terms-and-conditions"
+            />
+            <label for="terms-and-conditions" class="terms-and-conditions">
+              <span class="modal-custom-checkbox">
+                <svg class="modal-checkbox-overlay" width="10" height="8">
+                  <use href="./images/icons.svg#checkbox-mark"></use>
+                </svg> </span
+              >I accept the terms and conditions of the<a
+                href=""
+                class="privacy"
+              >
+                Privacy Policy</a
+              >
+            </label>
+          </div>
+          <button type="submit" class="modal-button">Send</button>
         </form>
-        <div class="terms-checkbox-wrapper">
-          <input
-            type="checkbox"
-            id="terms-and-conditions"
-            class="modal-checkbox visually-hidden"
-            name="terms-and-conditions"
-          />
-          <label for="terms-and-conditions" class="terms-and-conditions">
-            <span class="modal-custom-checkbox">
-              <svg class="modal-checkbox-overlay" width="10" height="8">
-                <use href="./images/icons.svg#checkbox-mark"></use>
-              </svg> </span
-            >I accept the terms and conditions of the
-            <a href="" class="privacy">Privacy Policy</a>
-          </label>
-        </div>
-        <button type="submit" class="modal-button">Send</button>
       </div>
     </div>
   </body>
